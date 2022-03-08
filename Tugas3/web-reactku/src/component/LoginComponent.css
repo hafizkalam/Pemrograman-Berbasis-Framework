@@ -1,0 +1,12 @@
+.btn-color{
+    background-color: #00FF00;
+    color: #fff;
+    
+  }
+  .rememberme {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: -1.5em;
+    margin-bottom: -0.3em;
+}
