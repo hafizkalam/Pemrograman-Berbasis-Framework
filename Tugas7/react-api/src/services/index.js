@@ -1,6 +1,6 @@
+import DeleteAPI from "./Delete";
 import GetAPI from "./Get";
 import PostAPI from "./Post";
-import DeleteAPI from "./Delete";
 
 const getNewsBlog = () => GetAPI("posts?_sort=id&_order=desc");
 const postNewsBlog = (dataYgDiKirim) => PostAPI("posts", dataYgDiKirim);

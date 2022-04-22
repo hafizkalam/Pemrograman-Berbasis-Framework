@@ -167,5 +167,3 @@ class BlogMahasiswa extends Component {
     );
   }
 }
-
-export default BlogMahasiswa;
