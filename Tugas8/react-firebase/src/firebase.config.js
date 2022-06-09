@@ -1,8 +1,8 @@
 export default {
-    apiKey: "AIzaSyDJUj0XHz0tFj2wlS74V32pV6LxIfZQowY",
-    authDomain: "reactfirebase-d398a.firebaseapp.com",  
-    projectId: "reactfirebase-d398a",  
-    storageBucket: "reactfirebase-d398a.appspot.com",
-    messagingSenderId: "952182532239",  
-    appId: "1:952182532239:web:8c7ebcc59322f1a047a8fa"
+    apiKey: "AIzaSyBolu3s89x-Lk6fBm-PrIXNDG40lwSSWXs",
+    authDomain: "reactfirebase-c2b06.firebaseapp.com",
+    projectId: "reactfirebase-c2b06",
+    storageBucket: "reactfirebase-c2b06.appspot.com",
+    messagingSenderId: "798958161476",
+    appId: "1:798958161476:web:cbba53b3369398558d3611"
 };
