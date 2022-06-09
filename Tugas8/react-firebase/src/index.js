@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import { ReactDOM } from "react";
-import { 
-  BrowserRouter as Router, 
-  Routes,
-  Route } 
-  from "react-router-dom";
-import routes from "./routes.js";
-import Header from "./Header";
-import "./styles.css";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
+import routes from './routes.js';
+import Header from './Header';
+import './styles.css';
+import firebase from 'firebase/compat/app';
+import firebaseConfig from './firebase.config';
+
+firebase.initializeApp(firebaseConfig);
 
 export const AuthContext = React.createContext(null);
 
-function App() {
+function App(){
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
-      Is Logged In? {JSON.stringify(isLoggedIn)}
-      <div className="App">
+      Is Logged in? {JSON.stringify(isLoggedIn)}
+      <div className='App'>
         <Router>
-          <Header />
-          <Routes>
+          <Header/>
+          <Switch>
             {routes.map(route => (
               <Route
                 key={route.path}
@@ -29,7 +29,7 @@ function App() {
                 component={route.main}
               />
             ))}
-          </Routes>
+          </Switch>
         </Router>
       </div>
     </AuthContext.Provider>
